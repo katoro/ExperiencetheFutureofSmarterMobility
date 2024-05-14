@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.car.button.CarSelectFragment">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupTemp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioButtonTemp1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="KONA" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/car_text2" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/car_text3" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/car_text4" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/car_text5" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_car_kona_selector"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_car_grandeur_selector"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_car_palisade_selector"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_car_ioniq5_selector"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_car_ioniq6_selector"
+            android:button="@null"/>
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.city.button.CityActivityFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_start"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_top" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupTemp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cityActivityToggle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioButtonTemp1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/activity_text1" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/activity_text2" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/activity_text3" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/activity_text4" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/cityActivityToggle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/cityActivityToggleBtn1"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_activity_restaurant_selector"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/cityActivityToggleBtn2"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_activity_gas_selector"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/cityActivityToggleBtn3"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_activity_carwash_selector"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/cityActivityToggleBtn4"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_activity_electric_selector"
+            android:button="@null"/>
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/cityActivityNextBtn"
+        android:visibility="gone"
+        android:text=">"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

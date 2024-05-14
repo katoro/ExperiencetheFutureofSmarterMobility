@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.city.button.CityButtonFragment">
+
+    <RadioGroup
+        android:id="@+id/radioGroupTemp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cityButtonToggle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioButtonTemp1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/city_text1" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/city_text2" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/city_text3" />
+        <RadioButton
+            android:id="@+id/radioButtonTemp4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:text="@string/city_text4" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/cityButtonToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/cityButtonToggleBtn1"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_city_seoul_selector"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/cityButtonToggleBtn2"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_city_busan_selector"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/cityButtonToggleBtn3"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_city_daegu_selector"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/cityButtonToggleBtn4"
+            android:layout_width="300dp"
+            android:layout_height="600dp"
+            android:background="@drawable/radio_button_city_gwangju_selector"
+            android:button="@null" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/cityButtonNextBtn"
+        android:visibility="gone"
+        android:text=">"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,64 @@
 <resources>
     <string name="app_name">ExperiencetheFutureofSmarterMobility</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="menu_act_button_scene">Button Search Activity</string>
+    <string name="menu_act_voice_scene">Voice Search Activity</string>
+    <string name="menu_manual_button_scene">Button Manual</string>
+    <string name="menu_manual_voice_scene">Voice Manual</string>
+
+
+    <string name="activity_text1">맛집</string>
+    <string name="activity_text2">주유소</string>
+    <string name="activity_text3">세차장</string>
+    <string name="activity_text4">전기차충전소</string>
+
+
+    <string name="city_text1">서울</string>
+    <string name="city_text2">부산</string>
+    <string name="city_text3">대구</string>
+    <string name="city_text4">광주</string>
+
+    <string name="city_key1">seoul</string>
+    <string name="city_key2">busan</string>
+    <string name="city_key3">daegu</string>
+    <string name="city_key4">gwangju</string>
+
+    <string name="car_text1">KONA</string>
+    <string name="car_text2">GRANDEUR</string>
+    <string name="car_text3">PALISADE</string>
+    <string name="car_text4">IONIQ5</string>
+    <string name="car_text5">IONIQ6</string>
+
+    <string name="car_key1">kona</string>
+    <string name="car_key2">grandeur</string>
+    <string name="car_key3">palisade</string>
+    <string name="car_key4">ioniq5</string>
+    <string name="car_key5">ioniq6</string>
+
+    <string name="car_background_text1">산</string>
+    <string name="car_background_text2">바다</string>
+    <string name="car_background_text3">호수</string>
+    <string name="car_background_text4">도시</string>
+
+
+    <string name="car_background_key1">mountain</string>
+    <string name="car_background_key2">sea</string>
+    <string name="car_background_key3">lake</string>
+    <string name="car_background_key4">city</string>
+
+
 </resources>

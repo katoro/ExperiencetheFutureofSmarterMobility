@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.experiencethefutureofsmartermobility.ui.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_citybutton"
+            app:destination="@id/nav_citybutton" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_carbutton"
+            app:destination="@id/nav_carbutton" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_citybutton"
+        android:name="com.example.experiencethefutureofsmartermobility.ui.city.button.CityButtonFragment"
+        tools:layout="@layout/fragment_city_button">
+        <action
+            android:id="@+id/action_nav_citybutton_to_nav_cityhotplace"
+            app:destination="@id/nav_cityhotplace"
+            app:popUpTo="@id/nav_home"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cityhotplace"
+        android:name="com.example.experiencethefutureofsmartermobility.ui.city.button.CityHotplaceFragment"
+        tools:layout="@layout/fragment_city_hotplace" >
+        <action
+            android:id="@+id/action_nav_cityhotplace_to_nav_cityactivity"
+            app:destination="@id/nav_cityactivity"
+            app:popUpTo="@id/nav_home"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cityactivity"
+        android:name="com.example.experiencethefutureofsmartermobility.ui.city.button.CityActivityFragment"
+        tools:layout="@layout/fragment_city_activity" >
+        <action
+            android:id="@+id/action_nav_cityactivity_to_nav_cityresult"
+            app:popUpTo="@id/nav_home"
+            app:destination="@id/nav_cityresult"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cityresult"
+        android:name="com.example.experiencethefutureofsmartermobility.ui.city.button.CityResultFragment"
+        tools:layout="@layout/fragment_city_result" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_carbutton"
+        android:name="com.example.experiencethefutureofsmartermobility.ui.car.button.CarSelectFragment"
+        tools:layout="@layout/fragment_car_select">
+        <action
+            android:id="@+id/action_nav_car_select_to_nav_car_background"
+            app:popUpTo="@id/nav_home"
+            app:destination="@id/nav_carbackground"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_carbackground"
+        android:name="com.example.experiencethefutureofsmartermobility.ui.car.button.CarBackgroundFragment"
+        tools:layout="@layout/fragment_car_background">
+        <action
+            android:id="@+id/action_nav_car_background_to_nav_car_result"
+            app:popUpTo="@id/nav_home"
+            app:destination="@id/nav_carresult"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_carresult"
+        android:name="com.example.experiencethefutureofsmartermobility.ui.car.button.CarResultFragment"
+        tools:layout="@layout/fragment_car_result">
+    </fragment>
+
+
+</navigation>

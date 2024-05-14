@@ -15,16 +15,32 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.ExperiencetheFutureofSmarterMobility"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="06w0g9uiip" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.ExperiencetheFutureofSmarterMobility.NoActionBar" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
